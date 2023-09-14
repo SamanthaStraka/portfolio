@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+   
+    <title>My Portfolio</title>
+
+
+
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      .skills {
+  text-align: left; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  padding-left: 10px; /* Add left padding */
+  color: white; /* White text color */
+
+}
+
+.unity {width: 80%; background-color: #0AB683;} /* Green */
+.latex {width: 70%; background-color: #1C3041;} /* Blue */
+.vuforia {width: 35%; background-color: #89043D;} /* Red */
+.oit {width: 65%; background-color: #1C3041; } /* Dark Grey */
+.csharp {width: 70%; background-color: #1C3041; } /* Dark Grey */
+.python {width: 20%; background-color: #89043D; } /* Dark Grey */
+.office  {width: 60%; background-color: #B2ABF2; } /* Dark Grey */
+.steamvr {width: 60%; background-color: #B2ABF2; } /* Dark Grey */
+.figma {width: 70%; background-color: #1C3041;} /* Dark Grey */
+.axure {width: 80%; background-color: #0AB683;} /* Dark Grey */
+.rlanguage {width: 60%; background-color: #B2ABF2; } /* Dark Grey */
+.git {width: 60%; background-color: #B2ABF2; } /* Dark Grey */
+.htmlskill {width: 30%; background-color: #B2ABF2; } /* Dark Grey */
+.js  {width: 25%; background-color: #89043D; } /* Dark Grey */
+.css  {width: 30%; background-color: #B2ABF2; } /* Dark Grey */
+
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+    
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="heroes.css" rel="stylesheet">
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    
+<main>
+  
+  <div class="bg-dark text-secondary px-4 py-5 text-center">
+    <div class="py-5">
+      <img class="d-block mx-auto mb-4" src="logo.png" alt="" width="100">
+      <h1 class="display-5 fw-bold text-white">Curriculum Vitae</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="fs-5 mb-4">This is my cv. It contains work experience, education, skills and languages. If you are interested where i applied these things, please have a look at my portfolio.</p>
+        <a href="index.html"> <button type="button" class="btn btn-outline-secondary btn-lg px-4">About Me</button></a>
+        <a href="index.html"> <button type="button" class="btn btn-outline-secondary btn-lg px-4">Portfolio</button></a>
+       
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="b-example-divider"></div>
+
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold text-body-emphasis">Work Experience</h1>
+    <div class="col-lg-6 mx-auto">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">When</th>
+            <th scope="col">Role/Short Description</th>
+            <th scope="col">Where</th>
+    
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">May 2022 - Now</th>
+            <td>Research Assistant in the AI Literacy@Work Project/Phd Student</td>
+            <td>University of Würzburg, Department of Human-Computer Interaction</td>
+     
+          </tr>
+          <tr>
+            <th scope="row">May 2019 - May 2022</th>
+            <td>Research Assistant in the DZ:PTM Project</td>
+            <td>University of Würzburg, Department of Human-Computer Interaction</td>
+      
+          </tr>
+          <tr>
+            <th scope="row">2016 - 2017</th>
+            <td>Student Researcher, Tutor for Introduction to HCI</td>
+            <td>University of Würzburg, Department of Human-Computer Interaction</td>
+
+          </tr>
+          <tr>
+            <th scope="row">2016 - 2018</th>
+            <td> Working Student, Conducted Studies, created driving simulator tracks</td>
+            <td> Würzburg Institute for Traffic Sciences</td>
+
+          </tr>
+        </tbody>
+      </table>
+     
+  
+
+
+    </div>
+
+    <div class="b-example-divider"></div>
+
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+
+ 
+  
+      <h1 class="display-4 fw-bold text-body-emphasis">Education</h1>
+      <div class="col-lg-12 mx-auto">
+        <table class="table">
+          <thead>
+            <tr>
+           
+             
+      
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">2018 - 2022</th>
+              <td> M.Sc. Human-Computer Interaction, University of Würzburg, Final Grade 1.6</td>
+             
+       
+            </tr>
+            <tr>
+              <th scope="row">2018 - 2019</th>
+              <td>Year abroad in Japan, Chuo University Tokyo</td>
+           
+        
+            </tr>
+            <tr>
+              <th scope="row">2013 - 2017</th>
+              <td> B.Sc. Mensch-Computer Systeme, University of Würzburg, Final Grade 1.8</td>
+           
+  
+            </tr>
+            <tr>
+              <th scope="row">2013</th>
+              <td> Abitur, Heinrich-Heine Gymnasium Ostfildern</td>
+        
+  
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+
+
+  <div class="b-example-divider"></div>
+
+
+
+
+
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold text-body-emphasis">Software Skills</h1>
+    <div class="col-lg-12 mx-auto">
+      <table class="table">
+        <thead>
+          <tr>
+       
+            <th scope="col">Experience rated from Left ("having no idea") to Right ("being really, really good at it").</th>
+
+    
+          </tr>
+        </thead>
+        <tbody>
+      
+          <tr>
+          
+    
+            <td>
+              <div class="container">
+                <div class="skills latex">Latex (the markup tool, not the polymer)</div>
+              </div></td>
+         
+
+          </tr>
+          <tr>
+   
+    
+            <td>
+              <div class="container">
+                <div class="skills oit">Oculus Integration Toolkit</div>
+              </div></td>
+         
+
+          </tr>
+          <tr>
+         
+         
+            <td>
+              <div class="container">
+                <div class="skills python">Python</div>
+              </div></td>
+         
+
+          </tr>
+          <tr>
+         
+    
+            <td>
+              <div class="container">
+                <div class="skills htmlskill">HTML</div>
+              </div></td>
+         
+
+          </tr>
+          <tr>
+           
+    
+            <td>
+              <div class="container">
+                <div class="skills python">CSS</div>
+              </div></td>
+         
+
+          </tr>
+          <tr>
+     
+    
+            <td>
+              <div class="container">
+                <div class="skills js">JavaScript</div>
+              </div></td>
+         
+
+          </tr>
+          <tr>
+           
+    
+            <td>
+            
+    
+                <div class="container">
+                  <div     class="skills vuforia">Vuforia</div>
+                </div></td>
+             </td>
+         
+
+          </tr>
+          <tr>
+        
+            <td>
+              <div class="container">
+                <div class="skills steamvr">Steam VR</div>
+              </div></td>
+         
+
+          </tr>
+          <tr>
+     
+    
+            <td>
+              <div class="container">
+                <div class="skills office">Microsoft Office</div>
+              </div></td>
+         
+
+          </tr>
+          <tr>
+
+    
+            <td>
+              <div class="container">
+                <div class="skills figma">Figma</div>
+              </div></td>
+         
+
+          </tr>
+          <tr>
+  
+    
+            <td>
+              <div class="container">
+                <div class="skills axure">Axure RP 9/10</div>
+              </div></td>
+         
+
+          </tr>
+          <tr>
+
+    
+            <td>
+              <div class="container">
+                <div class="skills rlanguage">R</div>
+              </div></td>
+         
+
+          </tr>
+          <tr>
+          
+    
+            <td>
+              <div class="container">
+                <div class="skills git">Git</div>
+              </div></td>
+         
+
+          </tr>
+            <tr>
+  
+      
+              <td>
+                <div class="container">
+                  <div class="skills csharp">CSharp</div>
+                </div></td>
+           
+  
+            </tr>
+          <tr>
+ 
+    
+            <td>
+              <div class="container">
+                <div class="skills unity">Unity Engine</div>
+              </div></td>
+         
+
+          </tr>
+        </tbody>
+      </table>
+     
+  
+
+
+    </div>
+    <div class="b-example-divider"></div>
+  <br>
+    <div class="col-lg-6 mx-auto">
+      <table class="table">
+        <thead>         <h1 class="display-4 fw-bold text-body-emphasis">Methods</h1>
+          <br>
+          <tr>
+            <th scope="col">What </th>
+            <th scope="col">Level</th>
+
+    
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Contextual Design</th>
+            <td>Two years of applied experience in a medical context. This includes user requirement analysis, data collection,  incremental UI prototyping and usability evaluations. </td>
+          
+     
+          </tr>
+          <tr>
+            <th scope="row">Statistical Analysis</th>
+            <td>Statistical analyses like t-tests, ANOVAS or non-parametric alternatives are routine to me. For more complicated calculations I would need to look them up before I conduct them - but I know what to search for and so far I could do them without further ado. </td>
+           
+      
+          </tr>
+          <tr>
+            <th scope="row">Interviews</th>
+            <td>I have created and conducted structured interviews, semi-structured interviews and I have also succeeded by freely asking users what they need in contextual inquiries. </td>
+   
+
+          </tr>
+          <tr>
+            <th scope="row">Affinity Diagramming</th>
+            <td>Routine Work, either with a physical wall or with digital alternatives.</td>
+ 
+
+          </tr>
+          <tr>
+            <th scope="row">Qualitative Analysis</th>
+            <td>I have done this for data interpretation of interviews and also to collect and aggregate drawn images of AI. I wouldnt mind to do some more work with qualitative data, as there are many ways to approach and structure qualitative analysis. </td>
+ 
+
+          </tr>
+          <tr>
+            <th scope="row">User Studies</th>
+            <td>Planning, conducting, and analyzing them is exciting routine work. </td>
+ 
+
+          </tr>
+          <tr>
+            <th scope="row">Usability Evaluations</th>
+            <td>Expert evaluation methods (cognitive walkthroughs, heuristic evaluations) and user-based methods are easy tasks for me. I know most common measurement tools and keep up to date on them.</td>
+ 
+
+          </tr>
+        </tbody>
+      </table>
+     
+  
+
+
+    </div>
+
+
+
+  <div class="b-example-divider"></div>
+
+
+  <br>
+  <div class="col-lg-6 mx-auto">
+    <table class="table">
+      <thead>        <h1 class="display-4 fw-bold text-body-emphasis">Languages</h1>
+        <br>
+        <tr>
+          <th scope="col"> </th>
+          <th scope="col"></th>
+
+  
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">German</th>
+          <td>Native Language </td>
+        
+   
+        </tr>
+        <tr>
+          <th scope="row">English</th>
+          <td>Around C2. Comfortable to speak and write in a professional setting. Wrote articles in it. Can freely and spontaneously express myself.  </td>
+         
+    
+        </tr>
+        <tr>
+          <th scope="row">French</th>
+          <td>Learned it in school. I can still read some, but everything else is a mystery to me.  </td>
+ 
+
+        </tr>
+        <tr>
+          <th scope="row">Japanese</th>
+          <td>Around A2 level (between JLPT 2 and 3).</td>
+
+
+        </tr>
+  
+      </tbody>
+    </table>
+   
+
+
+
+  </div>
+
+
+  <div class="b-example-divider"></div>
+
+
+  <div class="px-4 py-5 my-5 text-center">
+
+    <h1 class="display-5 fw-bold text-body-emphasis">Scientific Publications</h1>
+    <div class="col-lg-6 mx-auto">
+      <ul class="lead mb-4">
+      <li>  Immersive robot-assisted virtual reality therapy for neurologically-caused
+        gait impairments, Hamzeheinejad, N., Straka, S., Gall, D., Weilbach, F.,
+        Latoschik, M. E. (2018, March). In 2018 IEEE Conference on Virtual Reality and 3D User Interfaces (VR) (pp. 565-566)</li>
+        <br>
+        <li> Effects of Immersion and Visual Angle on Brand Placement Effectiveness,
+          Oberdörfer, S., Straka, S., Latoschik, M. E. (2021, March). In 2021 IEEE
+          Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops
+          (VRW) (pp. 440-441) </li>
+          <br>
+        <li> Fly My Little Dragon: Using AR to Learn Geometry. In 2022 IEEE
+          Conference on Games, Oberdörfer, S., Krop, P., Straka, S., Grafe, S., &
+          Latoschik, M. E. (2022, August). (CoG) (pp. 528-531). IEEE. </li>
+          <br>
+        <li> IT-Supported request management for clinical radiology: Analyzing Re-
+          quirements through Contextual Interviews, Krop, P., Straka, S., Ullrich, M.,
+          Ertl, M., Latoschik, M. E. (2021). In Mensch und Computer 2021 (pp. 120-124). </li>
+          <br>
+        <li>IT-Supported Request Management for Clinical Radiology: Contextual
+          Design and Remote Prototype Testing., Krop, P., Straka, S., Ullrich, M., Ertl,
+          M., Latoschik, M. E. (2022, April). In CHI Conference on Human Factors in
+          Computing Systems Extended Abstracts (pp. 1-8).  </li>
+          <br>
+        <li> Usability of a mHealth Solution using Speech Recognition for Point-of-care
+          Diagnostic Management., Kerwagen, F., Fuchs, K. F., Ullrich, M., Schulze, A.,
+          Straka, S., Krop, P., ... & Ertl, M. (2023). Journal of Medical Systems, 47(1),
+          18. </li>
+          <br>
+        <li>How do employees imagine AI they want to work with: A drawing study,
+          Straka, S., Koch, M. J., Carolus, A., Latoschik, M. E., & Wienrich, C. (2023,
+          April). In Extended Abstracts of the 2023 CHI Conference on Human Factors in
+          Computing Systems (pp. 1-8)  </li>
+          <br>
+        <li> MAILS–Meta AI Literacy Scale: Development and Testing of an AI
+          Literacy Questionnaire Based on Well-Founded Competency Models and
+          Psychological Change-and Meta-Competencies, Carolus, A., Koch, M., Straka,
+          S., Latoschik, M. E., & Wienrich, C. (2023). arXiv preprint arXiv:2302.09319. </li>
+   
+
+      </ul>
+
+    </div>
+  <br>
+  </div>
+
+
+</main>
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
