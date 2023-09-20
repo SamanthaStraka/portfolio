@@ -88,6 +88,23 @@
       .bd-mode-toggle {
         z-index: 1500;
       }
+      .container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
     </style>
 
     
@@ -172,10 +189,10 @@
            <p class="lead mb-4">The 3D User Interaction course was all about implementing various ways to interact with a virtual environment in VR. </p>
     
            <p class="lead mb-4">You can see the results here, and I am sorry about the horrible music. Some videos are made sleep-deprivated, and this is one of them. At the time we really thought it was fun. </p>
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/ilim_NfKUII?si=TXrtq3M4Nj-0tWOw"   ></iframe></p>
-       
-    
-    
+        
+           <div class="container">
+            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/ilim_NfKUII?si=TXrtq3M4Nj-0tWOw"  ></iframe>
+          </div>
         </div>
         
       

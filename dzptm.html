@@ -88,6 +88,23 @@
       .bd-mode-toggle {
         z-index: 1500;
       }
+      .container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
     </style>
 
     
@@ -168,12 +185,16 @@
   <div class="px-4 pt-5 my-5 text-center border-bottom">
     <h1 class="display-4 fw-bold text-body-emphasis"></h1>
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">Have you ever wondered what happens in the background if you go to the hospital and need a radiological procedure? In the time between the ordering the procedure and having the images ready for diagnosis, there are many little steps involving diffferent departments, people and systems.
+      <p class="lead mb-4">Have you ever wondered what happens in the background if you go to the hospital and need a radiological procedure? In the time between ordering the procedure and having the images ready for diagnosis, there are many little steps involving diffferent departments, people and systems.
         In this project, we digitized this whole process by using user-centered design - after all, we as HCI people are not as good at this as the actual professionals are. And so we listen to them, watch them at work, and discuss with them, until we find a solution that benefits all.
        </p>
        <p class="lead mb-4">We designed a first solution after multiple contextual interviews with all roles involved. Further focus groups helped us to pinpoint problems and clarify any last questions regarding workflows. Then, a first paper prototype was developed which we tested with all roles - and we found much to improve!  </p>
        <p class="lead mb-4">This meant improving the proptotype, but this time more concrete with wireframes. These were tested again and a final, digital and clickable prototype made in Axure RP9 emerged which solved most user problems with the old system, was efficient, effective and satisfied the users.  </p>
-       <p class="lead mb-4">The continuation of this project developed an actual working version of this prototype, which is now successfully running in the hospital.</p>
+     
+       
+        <img  src="ucdddzptm.png" alt="" width="100%">
+        <p > From paper to digital prototype</a></p>
+       <p class="lead mb-4">The continuation of this project is now successfully running in the hospital.</p>
        <p class="lead mb-4"><a href="https://hci.uni-wuerzburg.de/projects/dzptm/">  More info can be found here.</a></p>
     </div>
     
@@ -187,8 +208,11 @@
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">If you are interested in the process, you can read our short paper published at Mensch und Computer 2021  <a href="https://dl.acm.org/doi/10.1145/3473856.3473992">here</a></p>
       
-      <p class="lead mb-4">Or watch my colleague present our joint results and potential solutions at CHI 2021:
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/HhGqldQpiaE?si=APWRYPMCCoBkQv-O" ></iframe></p>
+      <p class="lead mb-4">Or watch my colleague present our joint results and potential solutions at CHI 2021:</p>
+
+      <div class="container">
+        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/HhGqldQpiaE?si=APWRYPMCCoBkQv-O"  ></iframe>
+      </div>
         <p class="lead mb-4">Also, if you have any further questions or ideas, please do not hesitate to contact me - this project was a lot of fun and I love talking about and sharing ideas about improving digital systems in medical settings. </p>
 
     </div>

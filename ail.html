@@ -88,6 +88,23 @@
       .bd-mode-toggle {
         z-index: 1500;
       }
+      .container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
     </style>
 
     
@@ -208,9 +225,11 @@
       <p class="lead mb-4">The preprint for our AI Literacy measuring scale can be found <a href="https://arxiv.org/abs/2302.09319">here</a></p>
       
       <p class="lead mb-4">Or watch our short teaser about how users imagine AI that they would like to work with at CHI 2023 (and enjoy some of the amazing and diverse drawings of AI that we received):
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/7Kw3O4vvBGI?si=9oqA57xcdr80J91d" ></iframe>  <br>
+      
+        <div class="container">
+          <iframe class="responsive-iframe" src="https://www.youtube.com/embed/7Kw3O4vvBGI?si=9oqA57xcdr80J91d"  ></iframe>
+        </div>
       The paper containing more info can be found <a href="https://dl.acm.org/doi/10.1145/3544549.3585631">here</a></p>
-
 
      
     

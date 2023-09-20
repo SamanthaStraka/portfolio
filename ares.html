@@ -88,6 +88,23 @@
       .bd-mode-toggle {
         z-index: 1500;
       }
+      .container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
     </style>
 
     
@@ -168,11 +185,12 @@
   <div class="px-4 pt-5 my-5 text-center border-bottom">
     <h1 class="display-4 fw-bold text-body-emphasis"></h1>
     <div class="col-lg-6 mx-auto">
-     <p class="lead mb-4"> Math is evil, numbers are hard, and math is not the most popular subject in school, even though no one can deny its importance. So what to do? </p>
+     <p class="lead mb-4"> Calculations are evil, numbers are hard, and math is not the most popular subject in school, even though no one can deny its importance. So what to do? </p>
        <p class="lead mb-4">Well, we implemented a serious game where one can learn and practice 3D geometry by helping a little dragon solve puzzles. And because visualizing space in 3D is difficult, we used Augmented Reality with scanned markers, where each puzzle room corresponds to one marker.  </p>
 
        <p class="lead mb-4">After each room, a user can see a summary of their work and know where to improve. If they need a refresher on how to solve the tasks, they can look it up. And the dragon makes really cute sounds when it is clicked. </p>
-
+       <img  src="dragon.png" alt="" width="50%">
+    
    
 
 
@@ -192,7 +210,12 @@
       
     
       <p class="lead mb-4">Here is also a short overview over the application itself: 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Hs3TaW8y844?si=B93YIA7o1YFJl1bM"  ></iframe></p>
+
+
+
+        <div class="container">
+          <iframe class="responsive-iframe" src="https://www.youtube.com/embed/Hs3TaW8y844?si=B93YIA7o1YFJl1bM"  ></iframe>
+        </div>
     </div>
 
 </main>
